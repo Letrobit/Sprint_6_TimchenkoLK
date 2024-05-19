@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestLionWithParameters" time="0.015" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.5\plugins\maven\lib\maven3\boot\plexus-classworlds-2.7.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.5\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.5\plugins\maven\lib\maven3/conf"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.22_7\bin"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.3.5 verify"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.5\plugins\maven\lib\maven3"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Lev"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.22_7"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.22+7-LTS"/>
+    <property name="user.name" value="Lev"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.22.7.1"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.5\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Lev\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.3.5"/>
+    <property name="java.version" value="11.0.22"/>
+    <property name="user.dir" value="C:\Users\Lev\Desktop\Lev\IT_study\YNDX\Java_study_projects\Java.Sprint_6\qa_java"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Lev\Desktop\Lev\IT_study\YNDX\Java_study_projects\Java.Sprint_6\qa_java"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.22_7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Amazon Corretto\jdk11.0.22_7\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Lev\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages;C:\Users\Lev\venv\Scripts;C:\Users\Lev\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\apache-maven-3.9.6\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\WebDriver\bin;C:\Users\Lev\AppData\Local\Microsoft\WindowsApps;C:\Users\Lev\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Lev\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages;C:\Users\Lev\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Lev\AppData\Roaming\npm;C:\Users\Lev\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-6.1.1-full_build\bin;C:\Users\Lev\Desktop\Lev\WORK\auto_test\.venv\Scripts;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.5\bin;;C:\Users\Lev\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.22+7-LTS"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.5\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="hasManeTestMaleAndFemale[0]" classname="TestLionWithParameters" time="0.002"/>
+  <testcase name="hasManeTestMaleAndFemale[1]" classname="TestLionWithParameters" time="0.002"/>
+</testsuite>
