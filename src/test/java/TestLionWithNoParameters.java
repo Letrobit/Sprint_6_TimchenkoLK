@@ -19,8 +19,6 @@ public class TestLionWithNoParameters {
 
     @Spy
     Lion lion = new Lion("Самец", felineSpy);
-    @Spy
-    Animal animal;
 
     public TestLionWithNoParameters() throws Exception {
     }

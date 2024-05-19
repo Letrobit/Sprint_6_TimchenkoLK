@@ -16,7 +16,6 @@ public class TestCat {
 
     @Spy
     public Feline feline;
-    public Animal animal;
 
     @Test
     public void getSoundTestMeowExpected() {
