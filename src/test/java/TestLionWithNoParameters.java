@@ -1,8 +1,11 @@
 import com.example.Animal;
 import com.example.Feline;
 import com.example.Lion;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
@@ -14,25 +17,26 @@ import static org.junit.Assert.assertEquals;
 public class TestLionWithNoParameters {
 
 
-    @Spy
-    Feline felineSpy = new Feline();
+    @Mock
+    Feline felineSpy;
+    Lion lion;
 
-    @Spy
-    Lion lion = new Lion("Самец", felineSpy);
-    @Spy
-    Animal animal;
-
-    public TestLionWithNoParameters() throws Exception {
+    @Before
+    public void setup() throws Exception {
+    lion = new Lion("Самец", felineSpy);
     }
-
 
     @Test
     public void lionHasKittensTestShouldReturn1() throws Exception {
+        int EXPECTED_KITTENS = 1;
+        Mockito.when(felineSpy.getKittens()).thenReturn(EXPECTED_KITTENS);
         assertEquals(1,lion.getKittens());
     }
     @Test
     public void getFoodTestShouldReturnPredator() throws Exception {
-        assertEquals(List.of("Животные", "Птицы", "Рыба"),lion.getFood());
+        List<String> listFood = List.of("Животные", "Птицы", "Рыба");
+        Mockito.when(felineSpy.getFood("Хищник")).thenReturn(listFood);
+        assertEquals(listFood,lion.getFood());
 
     }
 }

@@ -3,6 +3,8 @@ import com.example.Feline;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
@@ -13,24 +15,25 @@ import static org.junit.Assert.assertEquals;
 public class TestFeline {
     private static final String EXPECTED_FAMILY = "Кошачьи";
     private static final int NUMBER_OF_KITTENS = 10;
-    public Feline feline;
     @Spy
-    public Animal animal;
-    @Before
-    public void setup() {
-        feline = new Feline();
-    }
+    public Feline feline = new Feline();
+
     @Test
     public void getFamilyExpectedCat(){
         assertEquals(EXPECTED_FAMILY,feline.getFamily());
     }
     @Test
     public void getFoodExpectedPredator() throws Exception {
-        assertEquals(List.of("Животные", "Птицы", "Рыба"),feline.eatMeat());
+        List<String> expectedlistFood = List.of("Животные", "Птицы", "Рыба");
+        List<String> actualFoodList= feline.eatMeat();
+        Mockito.verify(feline, Mockito.times(1)).getFood("Хищник");
+        assertEquals(expectedlistFood,actualFoodList);
     }
     @Test
     public void getKittensNoParamsShouldReturnOne(){
-        assertEquals(1,feline.getKittens());
+        int actualKittenAmount = feline.getKittens();
+        Mockito.verify(feline, Mockito.times(1)).getKittens(1);
+        assertEquals(1,actualKittenAmount);
     }
 
     @Test

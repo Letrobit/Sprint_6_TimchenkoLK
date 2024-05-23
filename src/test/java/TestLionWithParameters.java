@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 
 
 import static org.junit.Assert.assertEquals;
@@ -15,10 +16,10 @@ public class TestLionWithParameters {
 
     private String sex;
     private boolean result;
+    Feline feline = new Feline();
 
-    Feline feline = Mockito.mock(Feline.class);
     public TestLionWithParameters(String sex, boolean result) {
-        this.sex = sex;
+        this.sex=sex;
         this.result=result;
     }
     @Parameterized.Parameters
@@ -33,7 +34,7 @@ public class TestLionWithParameters {
 
    @Before
    public void setup() throws Exception {
-    lion = new Lion(sex, feline);
+       lion = new Lion(sex, feline);
     }
 
     @Test

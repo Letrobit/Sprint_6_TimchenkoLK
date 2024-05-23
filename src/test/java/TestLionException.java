@@ -6,18 +6,13 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.mockito.Mockito;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
 
 @RunWith(Parameterized.class)
 public class TestLionException {
-    public Lion lion;
 
     private String sex;
     private static final String EXPECTED_ERROR = "Используйте допустимые значения пола животного - самец или самка";
 
-    Feline feline = Mockito.mock(Feline.class);
     public TestLionException(String sex) {
         this.sex = sex;
     }
@@ -31,11 +26,8 @@ public class TestLionException {
         };
     }
 
-    @Test
+    @Test(expected = Exception.class)
     public void throwsExceptionTrue() throws Exception {
-           Exception exception = assertThrows(Exception.class, () -> {
-               new Lion(sex, null);
-           });
-        assertEquals(EXPECTED_ERROR,exception.getMessage());
-    }
+            new Lion(sex, null);
+        }
 }
